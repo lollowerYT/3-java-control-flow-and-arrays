@@ -11,7 +11,10 @@ public class Task07Main {
     }
 
     static int sum(int[] arr) {
-        return Arrays.stream(arr).sum();
+        if(arr.length == 0) return 0;
+        var result = 0;
+        for(int ar : arr)
+            result += ar;
+        return result;
     }
-
 }
