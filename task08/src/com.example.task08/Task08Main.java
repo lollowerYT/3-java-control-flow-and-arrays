@@ -11,8 +11,8 @@ public class Task08Main {
     static long mult(int[] arr) {
         if(arr.length == 0) return 0;
         var result = 1;
-        for(int i = 0; i < arr.length; i++)
-            result *= arr[i];
+        for(int ar : arr)
+            result *= ar;
         return result;
     }
 
